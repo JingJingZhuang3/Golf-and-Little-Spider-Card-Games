@@ -1,0 +1,37 @@
+Class: ProjectTest
+
+Golf Tests:
+1. DeckTest() //check the size of deck and size of each suit;
+2. GolfCheckTableauCardCount() //check the initial size of 7 tableau piles in golf;
+3. GolfCheckStackableTableau() //check if two cards are stackable to each other in golf;
+4. GolfCheckIfTableauPileIsNotEmpty() //check if tableau pile is empty;
+5. GolfCheckRemoveFromTableauPile() //check if removing the top card makes the next card the new top card, and if removing a card decreases the size of the pile in golf;
+6. CheckGolfHomecellPileCardCount() //check the initial size of homecell pile in golf;
+7. CheckGolfHomecellPileLegalMove() //check if moving to homecell is legal / stackable in golf;
+8. GolfCheckRemoveFromHomecellPile() //check if we can remove from homecell in golf;
+9. GolfCheckAddCardToHomecellPile() //check what can or cannot be added to homecell pile in golf;
+
+Little Spider Test:
+1.LittleSpiderCheckTableauCardCount() //First test to make sure there is 6 cards in each Tableau 
+2.LittleSpiderCheckStackableTableau() //This will test if cards are stackable acording to game policies 
+3.CheckLittleSpiderHomecellPileCardCount() //Tests the count of Homecell pille after initializing 
+4.LittleSpiderCheckIfTableauPileIsNotEmpty() //Check if removing a card is not causing issues when stack is empty 
+5.LittleSpiderCheckAddCardToTableauPile() //Test if adding a card method is working properly 
+6.LittleSpiderCheckRemoveCardFromTableauPile() //Tests If removing a card from a Tableau result of decreasing the size of the tableau by 1 and place the last card at the top of the tableau 
+7.CheckLittleSpiderHomecellPileLegalMove() //Tests if adding a card to a tableau is allowed when it is a legal move and if it is denied when it is illegal 
+8.LittleSpiderCheckRemoveCardFromHomecellPile() //Check the method of removing a card from a homecell, if it is allowed or denied based on the game policy 
+9.LittleSpiderCheckAddCardToHomecellPile() //check if adding a card to the homecell is allowed based on the game policy and if number of the cards is increased after the adding 
+
+FortyThieves Test:
+1. HomecellPilesInitialTest() //Check homecell pile initial setup
+2. HomecellPilesRemovableTest() //Check is homecell pile Removable
+3. HomecellPilesAddableTest() //Check is homecell pile Addable
+4. TableauPilesInitialTest() //Check Talbleau pile initial setup
+5. TableauPilesRemovableTest() //Check is tableau pile Removable
+6. TableauPilesAddableTest() //Check is tableau pile Addable
+7. StockPileInitialTest() //Check stock pile initial setup
+8. StockPileRemovableTest() //Check is stock pile Removable
+9. StockPileAddableTest() //Check is stock pile Addable
+10. WastePileInitialTest() //Check Waste pile initial setup
+11. WastePileRemovableTest() //Check is Waste pile Removable
+12. WastePileAddableTest() //Check is Waste pile Addable
